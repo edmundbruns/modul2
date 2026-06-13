@@ -1752,6 +1752,7 @@ async function sendToSheets(){
     const validDone=[...done].filter(k=>progressKeys.has(k));
     const payload=collectDataM2();
     payload.teilnehmerName=teilnehmerName;
+    payload.email=document.getElementById('teilnehmer-email').value;
     payload.modulId=modulId;
     payload.clientSubmissionId=clientSubmissionId;
     payload.clientUpdateKey=clientUpdateKey;
